@@ -1,23 +1,17 @@
 <template lang="">
     <section class="dashboard-main-container">
-        <Sidebar />
         <main class="dashboard-main">
-            <Header />
             <router-view></router-view>
         </main>
     </section>
 </template>
 
 <script>
-import Sidebar from "./Sidebar.vue";
-import Header from "./Header.vue";
 import IconSearch from "../../components/svg/IconSearch.vue";
 
 export default {
     components: {
-        Sidebar,
         IconSearch,
-        Header,
     },
 };
 </script>
